@@ -1,4 +1,3 @@
-
 """
 URL configuration for proyecto project.
 
@@ -22,15 +21,15 @@ from user.views import register, home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
+
     # Home
     path('', home, name='home'),
-    
+
     # Authentication URLs
     path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('register/', register, name='register'),
-    
+
     # Password Reset URLs
     path('password-reset/', auth_views.PasswordResetView.as_view(
         template_name='registration/password_reset_form.html',
