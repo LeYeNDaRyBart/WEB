@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "user",
+    'user',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -134,6 +135,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'luisrvaz125@gmail.com'
 EMAIL_HOST_PASSWORD = 'dzda tbtf dodd rmrv'
 DEFAULT_FROM_EMAIL = 'luisrvaz125@gmail.com'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/6.0/ref/settings/#default-auto-field
